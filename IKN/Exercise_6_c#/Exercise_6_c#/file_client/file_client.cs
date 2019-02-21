@@ -8,7 +8,7 @@ namespace tcp
 	class file_client
     {
         private NetworkStream serverStream;
-        private System.Net.Sockets.TcpClient clientSocket;
+
         /// <summary>
         /// The PORT.
         /// </summary>
@@ -18,6 +18,8 @@ namespace tcp
 		/// </summary>
 		const int BUFSIZE = 1000;
 
+		const string server = "10.0.0.1";
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="file_client"/> class.
 		/// </summary>
@@ -26,9 +28,22 @@ namespace tcp
 		/// </param>
 		private file_client (string[] args)
         {
-            clientSocket = new System.Net.Sockets.TcpClient();
-            clientSocket.Connect("127.0.0.1", 9000);
-            Console.WriteLine("ClientSocket connected");
+			try{
+				TcpClient client = new System.Net.Sockets.TcpClient(server, PORT);
+
+                Console.WriteLine("ClientSocket connected");
+				NetworkStream stream = client.GetStream();
+				client.Close();
+				
+			}catch (ArgumentNullException e)
+            {
+                Console.WriteLine("ArgumentNullException: {0}", e);
+            }
+            catch (SocketException e)
+            {
+                Console.WriteLine("SocketException: {0}", e);
+            }
+
 
         }
 
@@ -41,17 +56,14 @@ namespace tcp
 		/// <param name='io'>
 		/// Network stream for reading from the server
 		/// </param>
-		private void receiveFile (String fileName, NetworkStream io)
+		private void receiveFile (String fileName, NetworkStream stream)
         {
-            serverStream = clientSocket.GetStream();
-            byte[] outStream = System.Text.Encoding.ASCII.GetBytes(fileName);
-            serverStream.Write(outStream, 0, outStream.Length);
-            serverStream.Flush();
+			Byte[] data = System.Text.Encoding.ASCII.GetBytes(fileName);
 
-            byte[] inStream = new byte[10025];
-            serverStream.Read(inStream, 0, (int) clientSocket.ReceiveBufferSize);
-            string returndata = System.Text.Encoding.ASCII.GetString(inStream);
-            Console.WriteLine(returndata);
+			stream.Write(data, 0, data.Length);
+			Console.WriteLine("Sent: {0}", fileName);
+
+			stream.Close();
         }
 
 		/// <summary>
@@ -64,6 +76,7 @@ namespace tcp
 		{
 			Console.WriteLine ("Client starts...");
 			new file_client(args);
+
 		}
 	}
 }

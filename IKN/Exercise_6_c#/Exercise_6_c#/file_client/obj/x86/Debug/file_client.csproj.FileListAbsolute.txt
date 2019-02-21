@@ -1,0 +1,8 @@
+/root/Documents/4_Semester/IKN/Exercise_6_c#/Exercise_6_c#/file_client/bin/Debug/file_client.exe
+/root/Documents/4_Semester/IKN/Exercise_6_c#/Exercise_6_c#/file_client/bin/Debug/file_client.pdb
+/root/Documents/4_Semester/IKN/Exercise_6_c#/Exercise_6_c#/file_client/bin/Debug/LIB.dll
+/root/Documents/4_Semester/IKN/Exercise_6_c#/Exercise_6_c#/file_client/bin/Debug/LIB.pdb
+/root/Documents/4_Semester/IKN/Exercise_6_c#/Exercise_6_c#/file_client/obj/x86/Debug/file_client.csprojResolveAssemblyReference.cache
+/root/Documents/4_Semester/IKN/Exercise_6_c#/Exercise_6_c#/file_client/obj/x86/Debug/file_client.csproj.CoreCompileInputs.cache
+/root/Documents/4_Semester/IKN/Exercise_6_c#/Exercise_6_c#/file_client/obj/x86/Debug/file_client.exe
+/root/Documents/4_Semester/IKN/Exercise_6_c#/Exercise_6_c#/file_client/obj/x86/Debug/file_client.pdb
