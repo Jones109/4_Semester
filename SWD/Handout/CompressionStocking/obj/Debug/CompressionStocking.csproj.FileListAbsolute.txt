@@ -1,0 +1,6 @@
+C:\Users\Bruger\Desktop\Handout\CompressionStocking\bin\Debug\CompressionStocking.dll
+C:\Users\Bruger\Desktop\Handout\CompressionStocking\bin\Debug\CompressionStocking.pdb
+C:\Users\Bruger\Desktop\Handout\CompressionStocking\obj\Debug\CompressionStocking.csprojAssemblyReference.cache
+C:\Users\Bruger\Desktop\Handout\CompressionStocking\obj\Debug\CompressionStocking.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\Desktop\Handout\CompressionStocking\obj\Debug\CompressionStocking.dll
+C:\Users\Bruger\Desktop\Handout\CompressionStocking\obj\Debug\CompressionStocking.pdb
