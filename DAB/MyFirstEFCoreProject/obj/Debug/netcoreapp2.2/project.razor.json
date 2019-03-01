@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/home/henrik/Dev/VisualCodeProjects/I4DAB/F19/MyFirstEFCoreProject/MyFirstEFCoreProject.csproj",
+  "TargetFramework": "netcoreapp2.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
